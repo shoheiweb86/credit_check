@@ -19,3 +19,8 @@ B,C君：大学の授業でプログラムを触った程度、プログラム�
 →その後、このアプリのデザインを好きなように作って！！(ファイルを送信するフォームだけは最低限作って)とお願いした。<br>
 →デザインとして使いやすいかは置いておいて、B,C君が勉強したことを存分に使ってくれたから良かったと思う。<br>
 →プログラムを好きになるキッカケになってくれたみたいで嬉しかった！
+
+## 実際の画面
+<img width="1435" alt="スクリーンショット 2023-11-10 19 23 47" src="https://github.com/shoheiweb86/credit_check/assets/82988094/2914e3fc-7fb5-47a8-8ab3-8fd6a1b0dd9e">
+<img width="1435" alt="スクリーンショット 2023-11-10 19 23 59" src="https://github.com/shoheiweb86/credit_check/assets/82988094/5f84ace8-d623-4b08-968f-b8c766cd378b">
+<img width="1434" alt="スクリーンショット 2023-11-10 19 26 38" src="https://github.com/shoheiweb86/credit_check/assets/82988094/831f9926-aa96-4868-8744-09a4985ce4a9">
