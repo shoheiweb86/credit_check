@@ -1,6 +1,6 @@
 # credit_check
 学校の実習で作成した卒業単位数を計算するWebアプリ
-
+[shoheiweb86.github.io/credit_check/](https://shoheiweb86.github.io/credit_check/)
 ## 使い方
 １，新潟大学の生徒がアクセスできるシステムから、自分の成績表のcsvファイルをダウンロードする<br>
 ２，このアプリのフォームからcsvファイルをアップロードする<br>
