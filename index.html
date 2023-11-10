@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=60%, initial-scale=1.0">
+  <title>Niigata unv -単位取得状況照会サイト</title>
+  <meta name="description" content="text text txet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="/js/script.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.slider').bxSlider({
+        auto: true,
+        pause: 5000,
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <h1>単位取得状況照会サイト</h1>
+    <ul>
+      <li><a href="#">Q&A</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+
+    <div class="slider">
+      <img src="./img/slider1.jpg" width="50vw" height="auto">
+      <img src="./img/slider2.jpg" width="50vw" height="auto">
+      <img src="./img/slider3.jpg" width="50vw" height="auto">
+      <img src="./img/slider4.jpg" width="50vw" height="auto">
+    </div>
+
+    <div class="dai">
+      <!-- 左側表示の吹き出し -->
+      <div class="left-side">
+        <div class="icon">
+          <img src="./img/tarou.jpg">
+          <p>太郎</p>
+        </div>
+        <div class="bubble">
+          <b>このサイトでは何ができますか？</b>
+        </div>
+      </div>
+      <!-- 右側表示の吹き出し -->
+      <div class="right-side">
+        <div class="icon">
+          <img src="./img/hanako.jpg">
+          <p>花子</p>
+        </div>
+        <div class="bubble">
+          <b>このサイトは新潟大学の学生が自分の単位の取得状況を確認できます！</b>
+        </div>
+      </div>
+      <!-- 左側表示の吹き出し -->
+      <div class="left-side">
+        <div class="icon">
+          <img src="./img/tarou.jpg">
+          <p>太郎</p>
+        </div>
+        <div class="bubble">
+          <b>どのように確認すればいいのですか？</b>
+        </div>
+      </div>
+      <!-- 右側表示の吹き出し -->
+      <div class="right-side">
+        <div class="icon">
+          <img src="./img/hanako.jpg">
+          <p>花子</p>
+        </div>
+        <div class="bubble">
+          <b>学務情報システムから自分の成績のCSVファイルをダウンロードして左下の指示の通りに操作してみてね！</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-wrap">
+      <form action="">
+        <label for="csv_file">
+          csvファイルを選択
+          <input type="file" id="csv_file" accept=".csv" />
+        </label>
+      </form>
+    </div>
+
+    <!-- jsで中身を挿入するテーブル -->
+    <div class="table-flex">
+      <div class="table-wrap">
+        <h2 id="kyoyo_table_ttl" class="table-head"></h2>
+        <table id="kyoyo_table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="table-wrap">
+        <h2 id="senmon_table_ttl" class="table-head"></h2>
+        <table id="senmon_table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="relation">
+      <h3 class="relation-ttl">関連情報</h3>
+      <div><a class="relation-link" href="https://www.iess.niigata-u.ac.jp/pdf/subject_list_2021/all.pdf"
+          target="_blank">新潟大学授業科目開設一覧</a></div>
+      <div><a class="relation-link" href="https://gakujo.iess.niigata-u.ac.jp/campusweb/campusportal.do"
+          target="_blank">新潟大学学務情報システム</a></div>
+    </div>
+  </main>
+
+  <script src="./js/creditsBySubject.js"></script>
+  <script src="./js/kyoyoCredits.js"></script>
+  <script src="./js/senmonCredits.js"></script>
+  <script src="./js/kyoyoCreditsArray.js"></script>
+  <script src="./js/kyoyoSubjectsArray.js"></script>
+  <script src="./js/senmonCredits.js"></script>
+  <script src="./js/senmonCreditsArray.js"></script>
+  <script src="./js/senmonSubjectsArray.js"></script>
+  <script src="./js/createTable.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
